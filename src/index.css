@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import "tailwindcss";
+
+
+
+body {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #1C1C1C;
+  background: linear-gradient(
+    to bottom,
+    #1C1C1C,
+    #101010
+  );
+  color: #FFFFF0;
+  overflow-x: hidden;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100vw;
+    padding: 2rem 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.carousel-track2 {
+  display: flex;
+  width: max-content;
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+
+.item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Small screens: stop animation, keep card styles */
+@media (max-width: 600px) {
+  .carousel-track,
+  .carousel-track2 {
+    animation: none !important;
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;  
+    align-items: center; 
+    width: 100%;                
+  }
+ 
+  .carousel-track .item:nth-child(n+6),
+  .carousel-track2 .item:nth-child(n+6) {
+    display: none;
+  }
+
+  .item {
+    margin: 0.5rem; 
+  }
+  }
+  
