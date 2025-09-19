@@ -2,6 +2,7 @@ import ageApp from "../assets/P-image/agecalcapp.png";
 import diz from "../assets/P-image/dictionaryapp.png";
 import ecommerce from "../assets/P-image/ecommerce.png";
 import tesla from "../assets/P-image/tesla.png";
+import netflix from "../assets/P-image/netflix.png";
 
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
@@ -97,6 +98,25 @@ function Projects() {
                 <a href="https://github.com/MartinWebDev-0/Car-configurator" target="_blank" className="px-4 py-2 bg-white text-green-900 font-semibold rounded-md shadow hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-900 transition">Codice</a>
 
                 <a href="https://martinwebdev-0.github.io/Car-configurator/" target="_blank" className="px-4 py-2 bg-white text-green-900 font-semibold rounded-md shadow hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-900 transition">Versione live</a>
+                </div>
+
+            </div>
+          </div>
+
+           <div className="bg-green-900 flex flex-col items-center text-center md:flex-row md:items-center md:text-left gap-8 p-10 m-10 rounded-md">
+            <img className="w-60 rounded-md" src={netflix} alt="tesla-car" />
+            <div className="flex flex-col">
+            <p className="text-2xl">Netflix landing page:</p>
+            <p className="text-lg">Netflix landing page with javascript.</p>
+             <div className="flex flex-row justify-center text-center md:justify-start md:text-left gap-2.5">
+            <img className="w-10 pt-2" src={HTML} alt="" />
+            <img className="w-10 pt-2" src={CSS} alt="" />
+            <img className="w-10 pt-2" src={JS} alt="" />
+             </div>
+                <div className="flex flex-row justify-center text-center md:justify-start md:text-left gap-4 pt-2">
+                <a href="https://github.com/MartinWebDev-0/NetflixClone" target="_blank" className="px-4 py-2 bg-white text-green-900 font-semibold rounded-md shadow hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-900 transition">Codice</a>
+
+                <a href="https://martinwebdev-0.github.io/NetflixClone/" target="_blank" className="px-4 py-2 bg-white text-green-900 font-semibold rounded-md shadow hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-900 transition">Versione live</a>
                 </div>
 
             </div>
