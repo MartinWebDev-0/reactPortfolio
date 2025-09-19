@@ -3,11 +3,13 @@ import diz from "../assets/P-image/dictionaryapp.png";
 import ecommerce from "../assets/P-image/ecommerce.png";
 import tesla from "../assets/P-image/tesla.png";
 import netflix from "../assets/P-image/netflix.png";
+import portfolio from "../assets/P-image/portfolioreact.png";
 
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
 import JS from '../assets/jslogo.png';
 import TW from '../assets/tailwindcss.png';
+import reactIcon from "../assets/react.svg";
 
 
 
@@ -104,10 +106,10 @@ function Projects() {
           </div>
 
            <div className="bg-green-900 flex flex-col items-center text-center md:flex-row md:items-center md:text-left gap-8 p-10 m-10 rounded-md">
-            <img className="w-60 rounded-md" src={netflix} alt="tesla-car" />
+            <img className="w-60 rounded-md" src={netflix} alt="netflix landing page" />
             <div className="flex flex-col">
             <p className="text-2xl">Netflix landing page:</p>
-            <p className="text-lg">Netflix landing page with javascript.</p>
+            <p className="text-lg">Netflix landing page con javascript.</p>
              <div className="flex flex-row justify-center text-center md:justify-start md:text-left gap-2.5">
             <img className="w-10 pt-2" src={HTML} alt="" />
             <img className="w-10 pt-2" src={CSS} alt="" />
@@ -118,6 +120,20 @@ function Projects() {
 
                 <a href="https://martinwebdev-0.github.io/NetflixClone/" target="_blank" className="px-4 py-2 bg-white text-green-900 font-semibold rounded-md shadow hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-900 transition">Versione live</a>
                 </div>
+
+            </div>
+          </div>
+
+          <div className="bg-green-900 flex flex-col items-center text-center md:flex-row md:items-center md:text-left gap-8 p-10 m-10 rounded-md">
+            <img className="w-60 rounded-md" src={portfolio} alt="portfolio" />
+            <div className="flex flex-col">
+            <p className="text-2xl">Potfolio website:</p>
+            <p className="text-lg">Questo portfolio realizzato con React/Tailwind.</p>
+             <div className="flex flex-row justify-center text-center md:justify-start md:text-left gap-2.5">
+            <img className="w-10 pt-2" src={HTML} alt="" />
+            <img className="w-10 pt-2" src={TW} alt="" />
+            <img className="w-10 pt-2" src={reactIcon} alt="" />
+             </div>
 
             </div>
           </div>
